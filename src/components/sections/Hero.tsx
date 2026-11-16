@@ -1,62 +1,87 @@
 function Hero() {
+  const tecnologias = [
+    "React",
+    "TypeScript",
+    "Material UI",
+    "Node.js",
+    "MySQL",
+    "Git & GitHub",
+  ];
+
   return (
-    <section className="min-h-screen bg-slate-950 text-white flex items-center">
-      <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-20 items-center">
-        {/* Columna izquierda */}
+    <section
+      id="home"
+      className="relative flex min-h-screen items-center overflow-hidden bg-gradient-to-br from-white via-brand-50 to-white pt-24 dark:from-slate-950 dark:via-slate-900 dark:to-slate-950"
+    >
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute -right-40 -top-40 h-96 w-96 rounded-full bg-brand-500/20 blur-3xl"
+      />
+
+      <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-6 md:grid-cols-2 md:gap-20">
         <div>
-          <p className="text-blue-400 text-lg mb-3">Hola, soy</p>
-
-          <h1 className="text-6xl md:text-8xl font-bold mb-4">Jhony Mamani</h1>
-
-          <h2 className="text-2xl md:text-4xl text-slate-300 mb-6">
+          <p className="mb-3 text-lg font-medium text-brand-600 dark:text-brand-400">
+            Hola, soy
+          </p>
+          <h1 className="mb-4 text-5xl font-bold text-slate-900 sm:text-6xl md:text-7xl dark:text-white">
+            Jhony Mamani
+          </h1>
+          <h2 className="mb-6 text-2xl text-slate-600 md:text-3xl dark:text-slate-300">
             Sistemas web a medida que automatizan tu negocio
           </h2>
-
-          <p className="text-slate-400 max-w-2xl text-lg mb-8">
+          <p className="mb-8 max-w-xl text-lg text-slate-600 dark:text-slate-400">
             Desarrollo sistemas empresariales y APIs que reemplazan procesos
             manuales por software rápido, seguro y fácil de usar.
           </p>
 
           <div className="flex flex-wrap gap-4">
-            <button className="bg-blue-600 px-6 py-3 rounded-lg hover:bg-blue-700 transition">
-              <a href="#projects">Ver proyectos</a>
-            </button>
-
-            <button className="border border-slate-700 px-6 py-3 rounded-lg hover:bg-slate-800 transition">
-              <a href="#contact">Cuéntame tu proyecto</a>
-            </button>
+            <a
+              href="#projects"
+              className="rounded-lg bg-brand-600 px-6 py-3 font-semibold text-white shadow-lg shadow-brand-600/30 transition hover:-translate-y-0.5 hover:bg-brand-700"
+            >
+              Ver proyectos
+            </a>
+            <a
+              href="#contact"
+              className="rounded-lg border border-slate-300 px-6 py-3 font-semibold text-slate-800 transition hover:-translate-y-0.5 hover:bg-slate-100 dark:border-slate-700 dark:text-slate-100 dark:hover:bg-slate-800"
+            >
+              Cuéntame tu proyecto
+            </a>
           </div>
         </div>
 
-        {/* Columna derecha */}
-        <div className="bg-slate-900 border border-slate-800 rounded-2xl p-8">
-          <h3 className="text-xl font-semibold mb-6">
-            Tecnologías Principales
+        <div className="rounded-2xl border border-slate-200 bg-white/70 p-8 shadow-xl backdrop-blur dark:border-slate-800 dark:bg-slate-900/70">
+          <h3 className="mb-6 text-xl font-semibold text-slate-900 dark:text-white">
+            Tecnologías principales
           </h3>
+          <ul className="flex flex-wrap gap-2">
+            {tecnologias.map((tec) => (
+              <li
+                key={tec}
+                className="rounded-full bg-brand-100 px-4 py-1.5 text-sm font-medium text-brand-700 dark:bg-brand-500/20 dark:text-brand-400"
+              >
+                {tec}
+              </li>
+            ))}
+          </ul>
 
-          <div className="space-y-3 text-slate-300">
-            <p>⚛ React</p>
+          <div className="my-6 border-t border-slate-200 dark:border-slate-800" />
 
-            <p>📘 TypeScript</p>
-
-            <p>🎨 Material UI (MUI)</p>
-
-            <p>🟢 Node.js</p>
-
-            <p>🗄 MySQL</p>
-
-            <p>🔧 Git & GitHub</p>
-          </div>
-
-          <div className="border-t border-slate-800 my-6"></div>
-
-          <h3 className="text-xl font-semibold mb-3">🚗 Proyecto destacado</h3>
-
-          <h4 className="text-lg font-medium text-white">SGOV</h4>
-
-          <p className="text-slate-400 mt-2">
+          <p className="text-sm font-medium uppercase tracking-wide text-brand-600 dark:text-brand-400">
+            Proyecto destacado
+          </p>
+          <h4 className="mt-1 text-lg font-semibold text-slate-900 dark:text-white">
+            SGOV
+          </h4>
+          <p className="mt-2 text-slate-600 dark:text-slate-400">
             Sistema Web de Gestión Operativa Vehicular
           </p>
+          <a
+            href="#projects"
+            className="mt-4 inline-block text-sm font-semibold text-brand-600 hover:underline dark:text-brand-400"
+          >
+            Ver el proyecto →
+          </a>
         </div>
       </div>
     </section>

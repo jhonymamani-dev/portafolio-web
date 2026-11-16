@@ -1,43 +1,72 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/png" href="/src/assets/JM.png" />
+    <link rel="icon" type="image/png" href="/JM.jpg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-     <meta
+    <meta
       name="google-site-verification"
       content="gizf41sRX0zqhPoa2228Of5r8g6A29MzFPupElXPtAg"
     />
+
+    <meta name="theme-color" content="#6366f1" />
+
     <meta
       name="description"
-      content="Jhony Mamani, Full Stack Developer especializado en React, TypeScript, Node.js y MySQL."
+      content="Desarrollador Full Stack en Perú. Creo aplicaciones web con React, TypeScript, Node.js y MySQL. Mira mis proyectos y contáctame."
     />
-
     <meta
       name="keywords"
-      content="Jhony Mamani, Full Stack Developer, React, TypeScript, Node.js, MySQL, Desarrollo Web"
+      content="Jhony Mamani, Desarrollador Full Stack, React, TypeScript, Node.js, MySQL, Desarrollo Web"
     />
-
     <meta name="author" content="Jhony Mamani" />
 
+    <link rel="canonical" href="https://jhonymamani-dev.vercel.app" />
+
     <meta property="og:title" content="Jhony José Mamani Limache" />
+    <meta
+      property="og:description"
+      content="Desarrollador Full Stack. Creo aplicaciones web con React, TypeScript, Node.js y MySQL. Mira mis proyectos y contáctame."
+    />
+    <meta property="og:url" content="https://jhonymamani-dev.vercel.app" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_PE" />
+    <meta
+      property="og:image"
+      content="https://jhonymamani-dev.vercel.app/og-image.jpg"
+    />
 
-<meta
-  property="og:description"
-  content="Desarrollador Full Stack especializado en React, Node.js y TypeScript."
-/>
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Jhony José Mamani Limache" />
+    <meta
+      name="twitter:description"
+      content="Desarrollador Full Stack. Creo aplicaciones web con React, TypeScript, Node.js y MySQL. Mira mis proyectos y contáctame."
+    />
+    <meta
+      name="twitter:image"
+      content="https://jhonymamani-dev.vercel.app/og-image.jpg"
+    />
 
-<meta
-  property="og:url"
-  content="https://jhonymamani-dev.vercel.app"
-/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-<meta property="og:type" content="website" />
+    <title>Jhony Mamani | Desarrollador Full Stack, React y Node.js</title>
 
-
-
-    <title>Jhony Mamani | Full Stack Developer</title>
-    
+    <script>
+      (function () {
+        var guardado = localStorage.getItem("tema");
+        var sistemaOscuro = window.matchMedia(
+          "(prefers-color-scheme: dark)",
+        ).matches;
+        if (guardado === "dark" || (!guardado && sistemaOscuro)) {
+          document.documentElement.classList.add("dark");
+        }
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>
