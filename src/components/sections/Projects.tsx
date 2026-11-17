@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import SGOVdashboard from "../../assets/images/SGOV/SGOVdashboard.png";
-import SGOVordenes from "../../assets/images/SGOV/SGOVdashboard.png";
-import SGOVreportes from "../../assets/images/SGOV/SGOVdashboard.png";
+import SGOVhistorial from "../../assets/images/SGOV/SGOVhistorial.png";
+import SGOVordenes from "../../assets/images/SGOV/SGOVordentrabajo.png";
+import SGOVdiagnostico from "../../assets/images/SGOV/SGOVdiagnostico.png";
 
 const tecnologiasSGOV = [
   "React",
@@ -184,7 +185,7 @@ function Projects() {
             </div>
 
             <img
-              src={SGOVdashboard}
+              src={SGOVhistorial}
               alt="Dashboard de SGOV"
               className="mb-8 w-full rounded-lg object-contain"
             />
@@ -193,14 +194,12 @@ function Projects() {
               El problema
             </h4>
             <p className="mb-6 text-slate-700 dark:text-slate-300">
-              El taller no contaba con ningún sistema. Las fotos de evidencia
-              quedaban en los celulares, los acuerdos se hacían por chat de
-              WhatsApp o de palabra, y los diagnósticos en PDF estaban sueltos.
-              No existía un registro único, así que encontrar el historial de un
-              vehículo era difícil y era fácil que algo se perdiera. Toda la
-              información dependía de un solo celular: si se malograba o se
-              perdía, se perdía también el registro de clientes, fotos y
-              conversaciones.
+              Muchos talleres automotrices manejan su información de forma
+              dispersa: las fotos de evidencia quedan en los celulares, los
+              acuerdos se hacen por chat o de palabra, y los diagnósticos en PDF
+              terminan sueltos. Sin un registro único, encontrar el historial de
+              un vehículo es difícil y es fácil que algo se pierda. Toda la
+              información depende de un solo dispositivo.
             </p>
 
             <h4 className="mb-2 font-semibold text-brand-600 dark:text-brand-400">
@@ -236,8 +235,8 @@ function Projects() {
                 className="rounded-lg object-contain"
               />
               <img
-                src={SGOVreportes}
-                alt="Reportes en SGOV"
+                src={SGOVdiagnostico}
+                alt="Diagnóstico en SGOV"
                 className="rounded-lg object-contain"
               />
             </div>
